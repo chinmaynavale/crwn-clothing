@@ -7,23 +7,28 @@
   justify-content: center;
   border: 1px solid #000000;
   margin: 0 7.5px 15px;
-  border-radius: 8px;
+  border-radius: 15px;
   overflow: hidden;
 
   &:hover {
     cursor: pointer;
 
     & .background-image {
-      transform: scale(1.1);
+      transform: scale(1.2);
       transition: transform 2s ease-out;
     }
 
     & .content {
-      opacity: 0.9;
+      transform: scale(0.9);
+      transition: transform 2s ease-out;
+      opacity: 0.7;
+      background-color: #000;
+      color: #ffffff;
+      cursor: pointer;
     }
 
-    .title {
-      color: #1f1f1f;
+    & .title {
+      color: #fff;
     }
   }
 
@@ -44,7 +49,7 @@
     height: 100%;
     background-size: cover;
     background-position: center;
-    border-radius: 8px;
+    border-radius: 15px;
   }
 
   .content {
@@ -57,14 +62,13 @@
     background: #ffffff;
     opacity: 0.7;
     border: 1px solid #000000;
-    border-radius: 6px;
+    border-radius: 15px;
     position: absolute;
 
     .title {
       font-weight: bold;
       margin-bottom: 6px;
       font-size: 22px;
-      color: #4a4a4a;
     }
 
     .subtitle {
