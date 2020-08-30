@@ -11,12 +11,21 @@
   }
 
   .navbar {
-    width: 50%;
     display: flex;
     justify-content: flex-end;
+    margin-right: 25px;
 
     .nav-link {
-      padding: 10px 30px;
+      padding: 8px 16px;
+
+      &:hover {
+        color: #eeeeee;
+        background-color: #111111;
+        border-radius: 10px;
+        transform: scale(1.1);
+        transition: all 500ms ease-out;
+        cursor: pointer;
+      }
     }
   }
 }
